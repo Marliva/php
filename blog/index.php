@@ -43,7 +43,12 @@ $connexion = null;
         foreach ($articles as $article):
         ?>
             <section>
-                <h2><?= $article['title'] ?></h2>
+                <h2><?= $article['title'] ?>
+            <span hx-delete="del_article.php?id=<?= $article['id'] ?>"
+            hx-confirm="Etes-vous sûr de vouloir supprimer cet article ?"
+            hx-swap="outerHTML"
+            class="delete">X</span>
+            </h2>
                 <p><?= $article['content'] ?></p>
             </section>
         <?php
