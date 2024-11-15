@@ -15,3 +15,5 @@ try {
 } catch (PDOException $error) {
     echo "Erreur de connnexion à la base de données : " . $error->getMessage();
 }
+
+$connexion = null;
