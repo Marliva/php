@@ -1,0 +1,16 @@
+{
+    "name": "ceppic/blog",
+    "description": "Blog en php",
+    "autoload": {
+        "psr-4": {
+            "Ceppic\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cédric L",
+            "email": "cedriclevasseur76@gmail.com"
+        }
+    ],
+    "require": {}
+}
